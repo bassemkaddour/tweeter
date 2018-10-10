@@ -19,11 +19,16 @@
     <!-- New tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <!-- Tweet Container CSS -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -39,11 +44,32 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
-          <textarea name="text" placeholder="What are you sinking about..."></textarea>
+          <textarea class="tweet-text" name="text" placeholder="What are you sinking about..."></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
      </section>
+     <section class="tweets">
+        <article>
+          <header>
+            <img class="tweeter-img" src="/images/bird.png">
+            <h2>Name Here</h2>
+            <span class="handle">@namehere</span>
+          </header>
+          <p>
+            Hello I am text in here. Hello I am text in here.
+            Hello I am text in here.
+            Hello I am text in here.
+            Hello I am text in here.
+            Hello I am text in here.
+            Hello I am text in here.
+          </p>
+          <footer>
+            <p>10 days ago</p>
+          </footer>
+        </article>
+     </section>
+
     </main>
 
   </body>

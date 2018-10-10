@@ -14,14 +14,23 @@
   border-bottom: 1px solid;
 }
 
-.new-tweet textarea {
+.tweet-text {
   padding: 6px;
   width: 100%;
 }
 
-.new-tweet input {
-  background-color: whitesmoke;
-}
 .counter {
   float: right;
+  color: black;
 }
+
+.error-num {
+  color: red;
+}
+
+.new-tweet input {
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+
