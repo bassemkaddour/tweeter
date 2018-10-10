@@ -1,4 +1,5 @@
 
+/*new tweet entire box*/
 .new-tweet {
   background-color: #eee;
   padding: 10px 1em;
@@ -8,17 +9,20 @@
 
 }
 
+/*header*/
 .new-tweet h2 {
   margin: 0 0 10px;
   border: grey;
   border-bottom: 1px solid;
 }
 
+/*text entry*/
 .tweet-text {
   padding: 6px;
   width: 100%;
 }
 
+/*footer elements*/
 .counter {
   float: right;
   color: black;

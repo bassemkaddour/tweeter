@@ -1,10 +1,10 @@
-
+/*whole article section*/
 .tweets {
   background-color: white;
   padding: 0 0 10px;
+  margin: 2em;
   border: 1px solid lightgrey;
   border-radius: 11px;
-  margin: 2em;
   opacity: 0.8;
 }
 
@@ -13,9 +13,13 @@
   border: 1px solid grey;
 }
 
-.tweets p {
-  width: 100%;
-  padding: 0 1em;
+/*header elements*/
+.tweets header {
+  height: 50px;
+  background-color: #eee;
+  padding: 0 1em 0 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .tweeter-img {
@@ -23,16 +27,6 @@
   width: 50px;
   height: 50px;
   padding: 5px;
-
-}
-
-
-.tweets header {
-  height: 50px;
-  background-color: #eee;
-  padding: 0 1em 0 5px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 .tweets h2 {
@@ -48,16 +42,37 @@
   margin: 0;
 }
 
+/*tweet text*/
+.tweet-body {
+  width: 100%;
+  padding: 0 1em;
+}
+
+
+
+/*footer elements*/
 .tweets footer {
   border-top: 2px solid #eee;
   height: 15px;
 }
 
-.tweets footer p {
+.created-at {
   float:left;
   margin: 0;
   padding: 4px 0 0 6px;
   font-size: .8em;
+}
+
+.icon {
+  width: 0;
+}
+.tweets:hover .icon {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  margin: 0 3px;
+  transition: 0.25s linear;
 }
 
 
