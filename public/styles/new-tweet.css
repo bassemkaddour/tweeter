@@ -5,7 +5,7 @@
   padding: 10px 1em;
   border: 1px solid lightgrey;
   border-radius: 10px;
-  margin: 2em;
+  margin: 1em 2em;
 
 }
 
@@ -20,9 +20,23 @@
 .tweet-text {
   padding: 6px;
   width: 100%;
-  height: 6em;
+  height: 4em;
   max-width: 100%;
   min-width: 100%;
+}
+
+.error {
+  color: red;
+  padding-left: 10px;
+  display: none;
+}
+
+#short-error {
+  display: inline;
+}
+
+#long-error {
+  display: inline;
 }
 
 /*footer elements*/

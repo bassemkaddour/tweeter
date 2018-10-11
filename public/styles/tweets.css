@@ -46,6 +46,7 @@
 .tweet-body {
   width: 100%;
   padding: 0 1em;
+  overflow-wrap: break-word;
 }
 
 
