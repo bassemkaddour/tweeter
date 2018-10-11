@@ -1,5 +1,5 @@
 body nav {
-    background-color: #00a087;
+    background-color: #660d98;
     color: #e8fdff;
     position: fixed;
     overflow: auto;
@@ -32,7 +32,7 @@ body nav {
   margin-right: 20px;
   width: 100px;
   height: 50px;
-  color: teal;
+  color: purple;
   background-color: #f1fbf9;
   opacity: .9;
   font-size: 120%;
