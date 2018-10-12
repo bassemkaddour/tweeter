@@ -24,7 +24,7 @@ $(document).ready(function() {
     const $main = $("<main>").append($paragraph);
 
     // footer elements
-    const $createdAtParagraph = $("<p>").addClass("created-at").text(tweet.created_at);
+    const $createdAtParagraph = $("<p>").addClass("created-at").text(moment().startOf('day').fromNow(tweet.created_at) + ' ago');
 
     const $iconsFlag = $("<img>").addClass("icon").attr("src", "/images/bird.png");
     const $iconsRetweet = $("<img>").addClass("icon").attr("src", "/images/bird.png");
