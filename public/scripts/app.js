@@ -27,11 +27,11 @@ $(document).ready(function() {
     const $createdAtParagraph = $("<p>").addClass("created-at").text(moment(tweet.created_at).startOf('hour').fromNow());
 
       // icons
-    const $iconsFlag = $("<img>").addClass("icon").attr("src", "/images/bird.png");
-    const $iconsRetweet = $("<img>").addClass("icon").attr("src", "/images/bird.png");
-    const $iconsHeart = $("<img>").addClass("icon").attr("src", "/images/bird.png");
+    const $iconsFlag = $("<i>").addClass("icon flag").attr("data-feather", "flag");
+    const $iconsRetweet = $("<i>").addClass("icon repeat").attr("data-feather", "repeat");
+    const $iconsHeart = $("<i>").addClass("icon heart").attr("data-feather", "heart");
 
-    const $iconSpan = $("<span>").append($iconsFlag).append($iconsRetweet).append($iconsHeart);
+    const $iconSpan = $("<span>").append($iconsHeart).append($iconsRetweet).append($iconsFlag);
 
     const $footer = $("<footer>").append($createdAtParagraph).append($iconSpan);
 
@@ -55,6 +55,7 @@ $(document).ready(function() {
       method: 'GET'
     }).then((tweetData) => {
       renderTweets(tweetData)
+      feather.replace();
     });
   }
 

@@ -6,6 +6,8 @@
 
     <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
@@ -24,10 +26,14 @@
     <!-- Tweet Container CSS -->
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -42,7 +48,10 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-        <button class="compose-button">Compose</button>
+      <button class="compose-button">
+        <i class="edit-icon" data-feather="edit"></i>
+          Compose
+      </button>
     </nav>
 
     <!-- Page-specific (main) content here -->

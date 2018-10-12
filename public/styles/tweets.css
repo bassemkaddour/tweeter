@@ -46,7 +46,8 @@
 .tweet-body {
   width: 100%;
   min-height: 60px;
-  padding: 0 1em;
+  padding: 0 1.5em;
+  font-size: 1.2em;
   overflow-wrap: break-word;
 }
 
@@ -61,8 +62,7 @@
 
 .created-at {
   float:left;
-  margin: 0;
-  padding: 4px 0 0 6px;
+  margin: 5px 0px 0px 11px;
   font-size: .8em;
 }
 
@@ -78,6 +78,20 @@
   transition: 0.25s linear;
 }
 
+.heart:hover {
+  color: red;
+  fill: pink;
+}
+
+.repeat:hover {
+  color: blue;
+  fill: lightblue;
+}
+
+.flag:hover {
+  color: teal;
+  fill: turquoise;
+}
 
 
 
