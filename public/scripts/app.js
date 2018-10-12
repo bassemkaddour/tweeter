@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function() {
-  $('.new-tweet').slideToggle(0);
+  $('.new-tweet').hide();
 
   function createTweetElement(tweet) {
 
