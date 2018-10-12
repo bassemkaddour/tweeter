@@ -1,5 +1,6 @@
+/* Styling for new tweet section */
 
-/*new tweet entire box*/
+/* new tweet entire box */
 .new-tweet {
   background-color: #eee;
   padding: 10px 1em;
@@ -9,14 +10,14 @@
 
 }
 
-/*header*/
+/* header */
 .new-tweet h2 {
   margin: 0 0 10px;
   border: grey;
   border-bottom: 1px solid;
 }
 
-/*text entry*/
+/* text entry */
 .tweet-text {
   padding: 6px;
   width: 100%;
@@ -39,7 +40,7 @@
   display: inline;
 }
 
-/*footer elements*/
+/* footer elements */
 .counter {
   float: right;
   color: black;

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
+
     <title>Tweeter - Home Page</title>
 
+    <!-- Meta Information -->
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +36,7 @@
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- App JS -->
+    <!-- App JS Functions, Character Count Function -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -46,24 +47,33 @@
 
     <!-- Top nav bar -->
     <nav id="nav-bar">
+
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+
       <button class="compose-button">
         <i class="edit-icon" data-feather="edit"></i>
           Compose
       </button>
+
     </nav>
 
     <!-- Container that shows the form for submitting a new tweet.-->
     <main class="container">
+
       <section class="new-tweet">
+
         <h2>Compose Tweet</h2>
+
         <form method="POST" action="/tweets/">
+
           <textarea class="tweet-text" name="text" placeholder="What are you sinking about..."></textarea>
           <input type="submit" value="Tweet">
           <span class="error"></span>
           <span class="counter">140</span>
+
         </form>
+
      </section>
 
      <!-- List ot posted tweets go in this section. -->

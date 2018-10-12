@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.new-tweet').hide();
 
 
-  //~~~~~~~~~~~~~~~~~~~ Functions ~~~~~~~~~~~~~~~~~~~~//
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
   //creates the html structured tweet element
   function createTweetElement(tweet) {
@@ -41,7 +41,7 @@ $(document).ready(function() {
     return $container;
   }
 
-
+  //Renders new tweets from the mongo database after emptying the existing tweets.
   function renderTweets(tweetArray) {
     $('#tweet-container').empty();
     const container = $('#tweet-container');
@@ -50,6 +50,8 @@ $(document).ready(function() {
     }
   }
 
+  //Gets tweets from the database and passes them to renderTweets.
+  //Runs replace on the feather icons so they will appear.
   function loadTweets() {
     $.ajax('/tweets', {
       method: 'GET'
@@ -61,9 +63,9 @@ $(document).ready(function() {
 
   loadTweets();
 
-  //~~~~~~~~~~~~~~ Event listeners ~~~~~~~~~~~~~~~~~~//
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~ Event listeners ~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-  //new tweet form submission
+  //New tweet form submission with error handling on tweet length
   $('.new-tweet form').on('submit', (e) => {
     e.preventDefault();
     $('.error').hide();
@@ -94,8 +96,6 @@ $(document).ready(function() {
     $('.new-tweet').slideToggle(550, () => {
       $('.tweet-text').focus();
     });
-
   });
-
 });
 
