@@ -91,8 +91,10 @@ $(document).ready(function() {
 
   //Toggles compose form and focuses on the text input when it is opened.
   $('.compose-button').on('click', (e) => {
-    $('.new-tweet').slideToggle(550);
-    $('.tweet-text').focus();
+    $('.new-tweet').slideToggle(550, () => {
+      $('.tweet-text').focus();
+    });
+
   });
 
 });

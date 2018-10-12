@@ -26,10 +26,10 @@
     <!-- Tweet Container CSS -->
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
-
-    <!-- External JS -->
+    <!-- JQuery -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
+    <!-- MomentJS (converts time to readable format)  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
 
     <!-- Feather icons -->
@@ -44,7 +44,7 @@
 
   <body>
 
-    <!-- Top nav bar (fixed) -->
+    <!-- Top nav bar -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
@@ -54,7 +54,7 @@
       </button>
     </nav>
 
-    <!-- Page-specific (main) content here -->
+    <!-- Container that shows the form for submitting a new tweet.-->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
@@ -65,32 +65,10 @@
           <span class="counter">140</span>
         </form>
      </section>
+
+     <!-- List ot posted tweets go in this section. -->
      <section id="tweet-container">
-<!--         <article class="tweets">
-          <header>
-            <img class="tweeter-img" src="/images/bird.png">
-            <h2>Name Here</h2>
-            <span class="handle">@namehere</span>
-          </header>
-          <main>
-            <p class="tweet-body">
-              Hello I am text in here. Hello I am text in here.
-              Hello I am text in here.
-              Hello I am text in here.
-              Hello I am text in here.
-              Hello I am text in here.
-              Hello I am text in here.
-            </p>
-          </main>
-          <footer>
-            <p class="created-at">10 days ago</p>
-            <span>
-              <img class="icon" src="/images/bird.png">
-              <img class="icon" src="/images/bird.png">
-              <img class="icon" src="/images/bird.png">
-            </span>
-          </footer>
-        </article> -->
+
      </section>
 
     </main>

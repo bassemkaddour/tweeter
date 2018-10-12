@@ -25,6 +25,7 @@ body nav {
   margin-left: 10px;
   line-height: 80px;
   margin-top: 14px;
+  color: whitesmoke;
 }
 
 .edit-icon {
@@ -48,7 +49,7 @@ body nav {
 
 .compose-button:hover {
   opacity: 1;
-  background-color: #ebf9f7;
+  background-color: #F5F3F3;
   color: black;
 }
 
