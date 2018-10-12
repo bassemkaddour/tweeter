@@ -5,25 +5,25 @@ Tweeter is a simple, single-page Twitter clone made using jQuery, HTML5, CSS3, a
 ## Final Product
 
 Homepage when loaded:
-!["Homepage when loaded:"]()
+!["Homepage when loaded:"](https://github.com/bassemkaddour/tweeter/blob/master/docs/tweeter-homepage.gif?raw=true)
 
  --
 <br/>
 
 Creating a new Tweet:
-!["Creating a new Tweet:"]()
+!["Creating a new Tweet:"](https://github.com/bassemkaddour/tweeter/blob/master/docs/new-tweet.gif?raw=true)
 
 --
 <br/>
 
 Empty tweet text error:
-!["Empty tweet text error:"]()
+!["Empty tweet text error:"](https://github.com/bassemkaddour/tweeter/blob/master/docs/empty-tweet.gif?raw=true)
 
 --
 <br/>
 
 Too many characters error:
-!["Too many characters error:"]()
+!["Too many characters error:"](https://github.com/bassemkaddour/tweeter/blob/master/docs/too-much-tweet.gif?raw=true)
 
 --
 <br/>
