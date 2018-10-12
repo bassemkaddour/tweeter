@@ -1,12 +1,12 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+/* Client-side JS logic */
 
 $(document).ready(function() {
   $('.new-tweet').hide();
 
+
+  //~~~~~~~~~~~~~~~~~~~ Functions ~~~~~~~~~~~~~~~~~~~~//
+
+  //creates the html structured tweet element
   function createTweetElement(tweet) {
 
 
@@ -24,8 +24,9 @@ $(document).ready(function() {
     const $main = $("<main>").append($paragraph);
 
     // footer elements
-    const $createdAtParagraph = $("<p>").addClass("created-at").text(moment().startOf('day').fromNow(tweet.created_at) + ' ago');
+    const $createdAtParagraph = $("<p>").addClass("created-at").text(moment(tweet.created_at).startOf('hour').fromNow());
 
+      // icons
     const $iconsFlag = $("<img>").addClass("icon").attr("src", "/images/bird.png");
     const $iconsRetweet = $("<img>").addClass("icon").attr("src", "/images/bird.png");
     const $iconsHeart = $("<img>").addClass("icon").attr("src", "/images/bird.png");
@@ -34,10 +35,12 @@ $(document).ready(function() {
 
     const $footer = $("<footer>").append($createdAtParagraph).append($iconSpan);
 
+    //put all elements in the article tag
     const $container = $("<article>").addClass('tweets').append($header).append($main).append($footer);
 
     return $container;
   }
+
 
   function renderTweets(tweetArray) {
     $('#tweet-container').empty();
@@ -57,24 +60,22 @@ $(document).ready(function() {
 
   loadTweets();
 
+  //~~~~~~~~~~~~~~ Event listeners ~~~~~~~~~~~~~~~~~~//
+
+  //new tweet form submission
   $('.new-tweet form').on('submit', (e) => {
     e.preventDefault();
     $('.error').hide();
 
     if ($('.tweet-text').val().length > 140) {
-      $('.error').text('Please keep it under 140 characters.').slideDown('slow');
-      return;
+        $('.error').text('Please keep it under 140 characters.').slideDown('slow');
+        return;
     } else if ($('.tweet-text').val().length === 0) {
-      $('.error').text('Please enter a tweet').slideDown('slow');
-
-      // $('.error')
-      //   .slideUp('fast', function() {
-      //     $(this).text('Please enter a tweet.')
-      //   }).slideDown('slow') ;
-      return;
+        $('.error').text('Please enter a tweet').slideDown('slow');
+        return;
     }
 
-    let data = $(e.target).serialize();
+    const data = $(e.target).serialize();
 
     $.ajax('/tweets', {
       method: 'POST',
@@ -87,7 +88,7 @@ $(document).ready(function() {
     });
   });
 
-
+  //Toggles compose form and focuses on the text input when it is opened.
   $('.compose-button').on('click', (e) => {
     $('.new-tweet').slideToggle(550);
     $('.tweet-text').focus();

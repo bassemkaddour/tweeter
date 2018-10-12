@@ -15,7 +15,7 @@
 
 /*header elements*/
 .tweets header {
-  height: 50px;
+  height: 60px;
   background-color: #eee;
   padding: 0 1em 0 5px;
   border-top-right-radius: 10px;
@@ -24,27 +24,28 @@
 
 .tweeter-img {
   float: left;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
+  width: 45px;
+  height: 45px;
+  margin: 8px 0 0 8px;
+  border-radius: 5px;
 }
 
 .tweets h2 {
   margin: 0;
-  padding: 10px 0 10px 10px;
+  margin: 12px 0 0px 13px;
   border: grey;
   float: left;
 }
 
 .handle {
-  padding: 16px 0 5px;
+  margin: 18px 5px 0 0;
   float:right;
-  margin: 0;
 }
 
 /*tweet text*/
 .tweet-body {
   width: 100%;
+  min-height: 60px;
   padding: 0 1em;
   overflow-wrap: break-word;
 }
@@ -54,7 +55,8 @@
 /*footer elements*/
 .tweets footer {
   border-top: 2px solid #eee;
-  height: 15px;
+  height: 20px;
+  z-index: 10;
 }
 
 .created-at {
