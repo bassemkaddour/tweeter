@@ -24,7 +24,7 @@ $(document).ready(function() {
     const $main = $("<main>").append($paragraph);
 
     // footer elements
-    const $createdAtParagraph = $("<p>").addClass("created-at").text(moment(tweet.created_at).startOf('hour').fromNow());
+    const $createdAtParagraph = $("<p>").addClass("created-at").text(moment(tweet.created_at).startOf('minute').fromNow());
 
       // icons
     const $iconsFlag = $("<i>").addClass("icon flag").attr("data-feather", "flag");
